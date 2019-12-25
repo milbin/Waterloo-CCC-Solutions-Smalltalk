@@ -1,2 +1,2 @@
 # Waterloo-CCC-Solutions-Smalltalk
-My solutions to the Waterloo Canadian computing competition, all written in Pharo (a Smalltalk dialect) 
+My solutions to some of the Waterloo Canadian computing competition questions, all written in Pharo (a Smalltalk dialect).
