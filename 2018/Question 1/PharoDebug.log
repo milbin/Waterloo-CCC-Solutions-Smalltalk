@@ -1,0 +1,885 @@
+THERE_BE_DRAGONS_HERE
+Pharo cannot locate the sources file named C:\Users\mlbbe\Documents\Programming\Waterloo-CCC-solutions-(Smalltalk)\Pharo7.0-32bit-ccd1f64.sources.
+
+Please check that the file is named properly and is in the
+same directory as this image.
+24 December 2019 9:17:04.959073 pm
+
+VM: Win32 - X64 - 6.2 - CoInterpreter VMMaker.oscog-eem.2509 uuid: 91e81f64-95de-4914-a960-8f842be3a194 Sep 13 2019
+StackToRegisterMappingCogit VMMaker.oscog-eem.2509 uuid: 91e81f64-95de-4914-a960-8f842be3a194 Sep 13 2019
+VM: 201907031441-pharo Guille@DESKTOP-MG6660L:projects/vm7/opensmalltalk-vm Date: Wed Jul 3 16:41:39 2019 CommitHash: 4e4c5b5a0 Plugins: 201907031441-pharo Guille@DESKTOP-MG6660L:projects/vm7/opensmalltalk-vm
+
+Image: Pharo7.0.4 [Build information: Pharo-7.0.4+build.168.sha.ccd1f6489120f58ddeacb2cac77cd3a0f0dcfbe6 (64 Bit)]
+
+StartupUIManager>>inform:
+	Receiver: a StartupUIManager
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named C:\Users\mlbbe\Documents\Prog...etc...
+		tmp1: 	nil
+	Receiver's instance variables: 
+		doNotQuitOnRestart: 	false
+		uiManager: 	nil
+
+
+PharoFilesOpener(Object)>>inform:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named C:\Users\mlbbe\Documents\Prog...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'the sources file named C:\Users\mlbbe\Documents\Programming\Waterloo-CCC...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withSourceRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'C:\Users\mlbbe\Documents\Programming\Waterloo-CCC-solutions-(Smalltalk)\...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>informCannotLocateSources
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>sourcesFileOrNil
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	SourceFile(C:\Users\mlbbe\Documents\Programming\Waterloo-CCC-solutions-(S...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+SourceFileArray>>ensureOpen
+	Receiver: a SourceFileArray
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		files: 	#(nil nil)
+		readOnlyQueue: 	SharedQueue with 0 items
+		flushChanges: 	true
+
+
+SmalltalkImage>>openSourceFiles
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		deferredStartupActions: 	nil
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		session: 	nil
+		vm: 	a VirtualMachine
+
+
+SourceFileArray class>>startUp:
+	Receiver: SourceFileArray
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#changeRecordsFor:->SourceFileArray>>#changeReco...etc...
+		format: 	65539
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SourceFileArray
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-Sources-Sources'
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(SourceFileArray)
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		registeredClassName: 	#SourceFileArray
+
+
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ])
+		id: 	nil
+		creationTime: 	2019-12-24T21:17:04.900073-05:00
+
+
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ])
+		id: 	nil
+		creationTime: 	2019-12-24T21:17:04.900073-05:00
+
+
+BlockClosure>>on:do:
+	Receiver: [ arg2 value: arg3 ]
+	Arguments and temporary variables: 
+		arg1: 	Exception
+		arg2: 	[ :arg4 | self errorHandler handleError: arg4 ]
+	Receiver's instance variables: 
+		outerContext: 	[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | sel...etc...
+		startpc: 	69
+		numArgs: 	0
+
+
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ])
+		id: 	nil
+		creationTime: 	2019-12-24T21:17:04.900073-05:00
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(SmallInteger) a Cla...etc...
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(SmallInteger) a Cla...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ])
+		id: 	nil
+		creationTime: 	2019-12-24T21:17:04.900073-05:00
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ])
+		id: 	nil
+		creationTime: 	2019-12-24T21:17:04.900073-05:00
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ])
+		id: 	nil
+		creationTime: 	2019-12-24T21:17:04.900073-05:00
+
+
+SessionManager>>launchSnapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+		tmp1: 	true
+		tmp2: 	true
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ] in SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+	Receiver: [ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		outerContext: 	SessionManager>>snapshot:andQuit:
+		startpc: 	135
+		numArgs: 	0
+
+
+
+--- The full stack ---
+StartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withSourceRef:
+PharoFilesOpener>>informCannotLocateSources
+PharoFilesOpener>>sourcesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SourceFileArray class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+BlockClosure>>on:do:
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>launchSnapshot:andQuit:
+[ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ] in SessionManager>>snapshot:andQuit:
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+Pharo cannot locate the sources file named C:\Users\mlbbe\Documents\Programming\Waterloo-CCC-solutions-(Smalltalk)\Pharo7.0-32bit-ccd1f64.sources.
+
+Please check that the file is named properly and is in the
+same directory as this image.
+24 December 2019 9:17:41.983034 pm
+
+VM: Win32 - X64 - 6.2 - CoInterpreter VMMaker.oscog-eem.2509 uuid: 91e81f64-95de-4914-a960-8f842be3a194 Sep 13 2019
+StackToRegisterMappingCogit VMMaker.oscog-eem.2509 uuid: 91e81f64-95de-4914-a960-8f842be3a194 Sep 13 2019
+VM: 201907031441-pharo Guille@DESKTOP-MG6660L:projects/vm7/opensmalltalk-vm Date: Wed Jul 3 16:41:39 2019 CommitHash: 4e4c5b5a0 Plugins: 201907031441-pharo Guille@DESKTOP-MG6660L:projects/vm7/opensmalltalk-vm
+
+Image: Pharo7.0.4 [Build information: Pharo-7.0.4+build.168.sha.ccd1f6489120f58ddeacb2cac77cd3a0f0dcfbe6 (64 Bit)]
+
+StartupUIManager>>inform:
+	Receiver: a StartupUIManager
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named C:\Users\mlbbe\Documents\Prog...etc...
+		tmp1: 	nil
+	Receiver's instance variables: 
+		doNotQuitOnRestart: 	false
+		uiManager: 	nil
+
+
+PharoFilesOpener(Object)>>inform:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named C:\Users\mlbbe\Documents\Prog...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'the sources file named C:\Users\mlbbe\Documents\Programming\Waterloo-CCC...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withSourceRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'C:\Users\mlbbe\Documents\Programming\Waterloo-CCC-solutions-(Smalltalk)\...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>informCannotLocateSources
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>sourcesFileOrNil
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	SourceFile(C:\Users\mlbbe\Documents\Programming\Waterloo-CCC-solutions-(S...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+SourceFileArray>>ensureOpen
+	Receiver: a SourceFileArray
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		files: 	#(nil nil)
+		readOnlyQueue: 	SharedQueue with 0 items
+		flushChanges: 	true
+
+
+SmalltalkImage>>openSourceFiles
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		deferredStartupActions: 	nil
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		session: 	nil
+		vm: 	a VirtualMachine
+
+
+SourceFileArray class>>startUp:
+	Receiver: SourceFileArray
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#changeRecordsFor:->SourceFileArray>>#changeReco...etc...
+		format: 	65539
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SourceFileArray
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-Sources-Sources'
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(SourceFileArray)
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		registeredClassName: 	#SourceFileArray
+
+
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ])
+		id: 	nil
+		creationTime: 	2019-12-24T21:17:41.900034-05:00
+
+
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ])
+		id: 	nil
+		creationTime: 	2019-12-24T21:17:41.900034-05:00
+
+
+BlockClosure>>on:do:
+	Receiver: [ arg2 value: arg3 ]
+	Arguments and temporary variables: 
+		arg1: 	Exception
+		arg2: 	[ :arg4 | self errorHandler handleError: arg4 ]
+	Receiver's instance variables: 
+		outerContext: 	[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | sel...etc...
+		startpc: 	69
+		numArgs: 	0
+
+
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ])
+		id: 	nil
+		creationTime: 	2019-12-24T21:17:41.900034-05:00
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(SmallInteger) a Cla...etc...
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(SmallInteger) a Cla...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ])
+		id: 	nil
+		creationTime: 	2019-12-24T21:17:41.900034-05:00
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ])
+		id: 	nil
+		creationTime: 	2019-12-24T21:17:41.900034-05:00
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ])
+		id: 	nil
+		creationTime: 	2019-12-24T21:17:41.900034-05:00
+
+
+SessionManager>>launchSnapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+		tmp1: 	true
+		tmp2: 	true
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ] in SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+	Receiver: [ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		outerContext: 	SessionManager>>snapshot:andQuit:
+		startpc: 	135
+		numArgs: 	0
+
+
+
+--- The full stack ---
+StartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withSourceRef:
+PharoFilesOpener>>informCannotLocateSources
+PharoFilesOpener>>sourcesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SourceFileArray class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+BlockClosure>>on:do:
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>launchSnapshot:andQuit:
+[ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ] in SessionManager>>snapshot:andQuit:
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+Pharo cannot locate the sources file named C:\Users\mlbbe\Documents\Programming\Waterloo-CCC-solutions-(Smalltalk)\2018\Question 1\Pharo7.0-32bit-ccd1f64.sources.
+
+Please check that the file is named properly and is in the
+same directory as this image.
+24 December 2019 9:20:40.625793 pm
+
+VM: Win32 - X64 - 6.2 - CoInterpreter VMMaker.oscog-eem.2509 uuid: 91e81f64-95de-4914-a960-8f842be3a194 Sep 13 2019
+StackToRegisterMappingCogit VMMaker.oscog-eem.2509 uuid: 91e81f64-95de-4914-a960-8f842be3a194 Sep 13 2019
+VM: 201907031441-pharo Guille@DESKTOP-MG6660L:projects/vm7/opensmalltalk-vm Date: Wed Jul 3 16:41:39 2019 CommitHash: 4e4c5b5a0 Plugins: 201907031441-pharo Guille@DESKTOP-MG6660L:projects/vm7/opensmalltalk-vm
+
+Image: Pharo7.0.4 [Build information: Pharo-7.0.4+build.168.sha.ccd1f6489120f58ddeacb2cac77cd3a0f0dcfbe6 (64 Bit)]
+
+StartupUIManager>>inform:
+	Receiver: a StartupUIManager
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named C:\Users\mlbbe\Documents\Prog...etc...
+		tmp1: 	nil
+	Receiver's instance variables: 
+		doNotQuitOnRestart: 	false
+		uiManager: 	nil
+
+
+PharoFilesOpener(Object)>>inform:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named C:\Users\mlbbe\Documents\Prog...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'the sources file named C:\Users\mlbbe\Documents\Programming\Waterloo-CCC...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withSourceRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'C:\Users\mlbbe\Documents\Programming\Waterloo-CCC-solutions-(Smalltalk)\...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>informCannotLocateSources
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>sourcesFileOrNil
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	SourceFile(C:\Users\mlbbe\Documents\Programming\Waterloo-CCC-solutions-(S...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+SourceFileArray>>ensureOpen
+	Receiver: a SourceFileArray
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		files: 	#(nil nil)
+		readOnlyQueue: 	SharedQueue with 0 items
+		flushChanges: 	true
+
+
+SmalltalkImage>>openSourceFiles
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		deferredStartupActions: 	nil
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		session: 	nil
+		vm: 	a VirtualMachine
+
+
+SourceFileArray class>>startUp:
+	Receiver: SourceFileArray
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#changeRecordsFor:->SourceFileArray>>#changeReco...etc...
+		format: 	65539
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SourceFileArray
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-Sources-Sources'
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(SourceFileArray)
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		registeredClassName: 	#SourceFileArray
+
+
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ])
+		id: 	nil
+		creationTime: 	2019-12-24T21:20:40.575793-05:00
+
+
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ])
+		id: 	nil
+		creationTime: 	2019-12-24T21:20:40.575793-05:00
+
+
+BlockClosure>>on:do:
+	Receiver: [ arg2 value: arg3 ]
+	Arguments and temporary variables: 
+		arg1: 	Exception
+		arg2: 	[ :arg4 | self errorHandler handleError: arg4 ]
+	Receiver's instance variables: 
+		outerContext: 	[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | sel...etc...
+		startpc: 	69
+		numArgs: 	0
+
+
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ])
+		id: 	nil
+		creationTime: 	2019-12-24T21:20:40.575793-05:00
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(SmallInteger) a Cla...etc...
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(SmallInteger) a Cla...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ])
+		id: 	nil
+		creationTime: 	2019-12-24T21:20:40.575793-05:00
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ])
+		id: 	nil
+		creationTime: 	2019-12-24T21:20:40.575793-05:00
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection([ self new activate ])
+		id: 	nil
+		creationTime: 	2019-12-24T21:20:40.575793-05:00
+
+
+SessionManager>>launchSnapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+		tmp1: 	true
+		tmp2: 	true
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ] in SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+	Receiver: [ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		outerContext: 	SessionManager>>snapshot:andQuit:
+		startpc: 	135
+		numArgs: 	0
+
+
+
+--- The full stack ---
+StartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withSourceRef:
+PharoFilesOpener>>informCannotLocateSources
+PharoFilesOpener>>sourcesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SourceFileArray class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+BlockClosure>>on:do:
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>launchSnapshot:andQuit:
+[ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ] in SessionManager>>snapshot:andQuit:
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+

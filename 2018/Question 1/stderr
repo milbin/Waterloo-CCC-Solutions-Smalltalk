@@ -1,0 +1,34 @@
+[31mPharo cannot locate the sources file named C:\Users\mlbbe\Documents\Programming\Waterloo-CCC-solutions-(Smalltalk)\2018\Question 1\Pharo7.0-32bit-ccd1f64.sources.
+
+Please check that the file is named properly and is in the
+same directory as this image.
+[0mStartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withSourceRef:
+PharoFilesOpener>>informCannotLocateSources
+PharoFilesOpener>>sourcesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SourceFileArray class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup: in Block: [ :arg2 | arg2 startup: arg1 ]
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do: in Block: [ arg2 value: arg3 ]
+BlockClosure>>on:do:
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do: in Block: [ :arg3 | ...
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>launchSnapshot:andQuit:
+[ tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+tmp1 signal ] in SessionManager>>snapshot:andQuit: in Block: [ tmp3 := self launchSnapshot: arg1 andQuit: arg2....etc...
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess in Block: [ self value....
+[0m
